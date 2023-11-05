@@ -27,7 +27,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-[#3CC78F] text-white  font-bold">
+    <div className="navbar lg:-mt-12  container mx-auto bg-[#3CC78F] text-white  font-bold relative top-12 rounded-xl">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -53,9 +53,8 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <div className=" flex items-center gap-2">
+        <div className="items-center gap-2">
           <img className=" w-2/5" src={logo} alt="" />
-          
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

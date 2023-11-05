@@ -8,7 +8,7 @@ import Volunter from "./Volunter/Volunter";
 
 const Home = () => {
     return (
-        <div className=" border-2 text-center">
+        <div className="">
             <Banner></Banner>
             <HelpingReason></HelpingReason>
             <LatestActivities></LatestActivities>

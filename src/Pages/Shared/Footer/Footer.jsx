@@ -29,8 +29,6 @@ const Footer = () => {
             <a className="link link-hover">Cookie policy</a>
           </nav>
         </div>
-
-       
       </aside>
 
       <nav>
@@ -70,10 +68,10 @@ const Footer = () => {
           </a>
         </div>
       </nav>
-      <p className="font-bold text-2xl">
+      <p className="font-bold text-5xl">
           Community Food Bridge
         </p>
-      <p className=" text-red-600">Copyright © 2023 - All right reserved</p>
+      <p className=" text-red-600 font-bold text-lg">Copyright © 2023 - All right reserved</p>
     </footer>
   );
 };
