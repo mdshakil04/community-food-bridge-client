@@ -4,8 +4,8 @@ import React from "react";
 const LatestActivities = () => {
   return (
     <div className="">
-      <div className=" mb-8">
-        <h2 className="text-5xl font-mono rounded-full md:p-4 mt-4 text-center">
+      <div className="  mb-4">
+        <h2 className="text-5xl font-mono mb-12 text-center">
           Our Latest Activities
         </h2>
       </div>
