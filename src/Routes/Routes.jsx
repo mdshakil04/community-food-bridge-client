@@ -4,6 +4,7 @@ import {
 import Root from "../Layouts/Root";
 import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import FeaturedFoods from "../Pages/FeaturedFoods/FeaturedFoods";
   const routes = createBrowserRouter([
     {
       path: "/",
@@ -13,6 +14,11 @@ import ErrorPage from "../Pages/ErrorPage/ErrorPage";
         {
             path:'/',
             element:<Home></Home>
+        },
+        {
+          path:'/featuredFoods',
+          element:<FeaturedFoods></FeaturedFoods>,
+          // loader: () => fetch('foods.json')
         }
       ]
     },

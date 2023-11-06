@@ -27,7 +27,7 @@
       "food_name": "Fish Curry",
       "donator_image": "https://i.ibb.co/8bT8rFH/comment-3.png",
       "donator_name": "Michael Johnson",
-      "food_quantity": "2 loaves",
+      "food_quantity": "2",
       "pickup_location": "789 Oak Avenue",
       "expired_date": "2023-11-09",
       "additional_notes": "Gluten-free"
@@ -38,7 +38,7 @@
       "food_name": "Fried Rice",
       "donator_image": "https://i.ibb.co/HXzvz16/comment-2.png",
       "donator_name": "Emily Brown",
-      "food_quantity": "3 servings",
+      "food_quantity": "3",
       "pickup_location": "1011 Pine Lane",
       "expired_date": "2023-11-08",
       "additional_notes": "Dressing on the side"
@@ -49,7 +49,7 @@
       "food_name": "Mutton Briyani",
       "donator_image": "https://i.ibb.co/8bT8rFH/comment-3.png",
       "donator_name": "William Davis",
-      "food_quantity": "1 gallon",
+      "food_quantity": "1",
       "pickup_location": "1213 Maple Drive",
       "expired_date": "2023-11-10",
       "additional_notes": "Low-fat"
@@ -60,7 +60,7 @@
       "food_name": "Chicken Fry",
       "donator_image": "https://i.ibb.co/h13fRwm/comment-1.png",
       "donator_name": "Sophia Wilson",
-      "food_quantity": "2 pounds",
+      "food_quantity": "2",
       "pickup_location": "1415 Birch Road",
       "expired_date": "2023-11-11",
       "additional_notes": "Cooking instructions inside"
