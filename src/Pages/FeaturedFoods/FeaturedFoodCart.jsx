@@ -14,7 +14,7 @@ const FeaturedFoodCart = ({ featuredFood }) => {
     additional_notes,
   } = featuredFood;
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl border-4 border-green-300">
       <figure>
         <img src={food_image} alt="Food" />
       </figure>
@@ -34,6 +34,7 @@ const FeaturedFoodCart = ({ featuredFood }) => {
           </div>
         </div>
         <p className=" font-bold">Pickup Location: { pickup_location}</p>
+        <button className="btn btn-outline btn-success">View Details</button>
       </div>
     </div>
   );

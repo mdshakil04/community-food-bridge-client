@@ -14,30 +14,30 @@ const HelpingReason = () => {
                     <div className=''>
                         <img className='rounded-xl' src='https://i.ibb.co/T8Vkdxq/1.png' alt="" />
                     </div>
-                    <div className='card md:w-[280px] card-body bg-white border shadow-lg relative md:-top-52 md:left-16 md:py-12'>
+                    <div className='card md:w-[280px] card-body  bg-white border-4 border-green-300 shadow-xl relative md:-top-52 md:left-16 md:py-12'>
                         <h2 className="md:text-2xl mb-4">Collecting Fund</h2>
-                        <p>Collecting funds is a common practice used by various organizations, charities, and individuals to raise money for specific causes, projects ....</p>
-                        <button className="btn btn-outline btn-info md:mt-8">Read More</button>
+                        <p>Collecting funds is a common practice used by various organizations, charities, and individuals to raise money....</p>
+                        <button className="btn btn-outline btn-success mt-4">Read More</button>
                     </div>
                 </div>
                 <div className=' card'>
                     <div>
                         <img className='rounded-xl' src='https://i.ibb.co/wCxvvzS/2.png' alt="" />
                     </div>
-                    <div className='card md:w-[280px] card-body bg-white border shadow-lg relative md:-top-52 md:left-16 md:py-12'>
+                    <div className='card md:w-[280px] card-body bg-white  border-4 border-green-300 shadow-xl relative md:-top-52 md:left-16 md:py-12'>
                         <h2 className="md:text-2xl mb-4">Blood Camp</h2>
                         <p>A blood donation camp is an organized event where individuals voluntarily donate blood ....</p>
-                        <button className="btn btn-outline btn-info mt-8">Read More</button>
+                        <button className="btn btn-outline btn-success mt-4">Read More</button>
                     </div>
                 </div>
                 <div className=' card'>
                     <div>
                         <img className='rounded-xl' src='https://i.ibb.co/yg8b9vV/3.png' alt="" />
                     </div>
-                    <div className='card md:w-[280px] card-body bg-white border shadow-lg relative md:-top-52 md:left-16 md:py-12'>
+                    <div className='card md:w-[280px] card-body bg-white  border-4 border-green-300 shadow-xl relative md:-top-52 md:left-16 md:py-12'>
                         <h2 className="md:text-2xl mb-4">Friendly Volunteer</h2>
                         <p>A friendly volunteer is an individual who selflessly dedicates their time, energy, and skills to support various....</p>
-                        <button className="btn btn-outline btn-info mt-8">Read More</button>
+                        <button className="btn btn-outline btn-success  mt-4">Read More</button>
                     </div>
                 </div>
             </div>
