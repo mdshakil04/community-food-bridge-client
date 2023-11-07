@@ -9,6 +9,7 @@ import Volunter from "../Pages/Home/Volunter/Volunter";
 import AvailableFoods from "../Pages/AvailableFoods/AvailableFoods";
 import AddFood from "../Pages/AddFood/AddFood";
 import ManageFoods from "../Pages/ManageFoods/ManageFoods";
+import FoodDetails from "../Pages/FoodDetails/FoodDetails";
   const routes = createBrowserRouter([
     {
       path: "/",
@@ -38,6 +39,11 @@ import ManageFoods from "../Pages/ManageFoods/ManageFoods";
         {
           path:'/manageFoods',
           element:<ManageFoods></ManageFoods>
+        },
+        {
+          path:'/foodDetail/:id',
+          element:<FoodDetails></FoodDetails>,
+          loader: ({params}) => fetch(`http://localhost:5000/foods/${params.id}`)
         }
       ]
     },

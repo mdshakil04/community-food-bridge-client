@@ -1,22 +1,22 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const FeaturedFoodCart = ({ featuredFood }) => {
-  const {
-    id,
-    food_image,
-    food_name,
-    donator_image,
-    donator_name,
-    food_quantity,
-    pickup_location,
-    expired_date,
-    additional_notes,
-  } = featuredFood;
-  return (
-    <div className="card bg-base-100 shadow-xl border-4 border-green-300">
+const AvailableFoodsCart = ({allFood}) => {
+    const {
+        _id,
+        food_image,
+        food_name,
+        donator_image,
+        donator_name,
+        food_quantity,
+        pickup_location,
+        expired_date,
+        additional_notes,
+      } = allFood;
+    return (
+        <div className="card bg-base-100 shadow-xl border-4 border-green-300">
       <figure>
         <img src={food_image} alt="Food" />
       </figure>
@@ -36,13 +36,13 @@ const FeaturedFoodCart = ({ featuredFood }) => {
           </div>
         </div>
         <p className=" font-bold">Pickup Location: { pickup_location}</p>
-        <Link to={'/foodDetail'}>
+        {/* '/foodDetail' */}
+        <Link to={`/foodDetail/${_id}`}>
           <button className="btn btn-outline btn-success">View Details</button>
         </Link>
-       
       </div>
     </div>
-  );
+    );
 };
 
-export default FeaturedFoodCart;
+export default AvailableFoodsCart;
