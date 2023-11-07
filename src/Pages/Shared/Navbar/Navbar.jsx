@@ -1,9 +1,30 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
-import { NavLink } from "react-router-dom";
-import logo from '../../../assets/image/logo.png'
+import React, { useContext, useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import logo from "../../../assets/image/logo.png";
+import { AuthContext } from "../../../Firebase/AuthProvider";
 
 const Navbar = () => {
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    const localTheme = localStorage.getItem("theme");
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+  }, [theme]);
+  // ----------------------------------------------------------------------------------------
+  const { user, logOut } = useContext(AuthContext);
+  const handleSignOut = () => {
+    logOut().then().catch();
+  };
   const navLinks = (
     <>
       <li>
@@ -54,13 +75,13 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="items-center gap-2">
-          <img className=" w-2/5" src={logo} alt="" />
+          {/* <img className=" w-2/5" src={logo} alt="" /> */}
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-lg">{navLinks}</ul>
       </div>
-      {/* <div className="navbar-end ">
+      <div className="navbar-end ">
           <label tabIndex={0} className="">
             <div className=" ">{user && <p>{user.email}</p>}</div>
           </label>
@@ -97,7 +118,7 @@ const Navbar = () => {
               </svg>
             </label>
           </div>
-        </div> */}
+        </div>
     </div>
   );
 };

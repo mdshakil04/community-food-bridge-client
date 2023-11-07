@@ -11,6 +11,8 @@ import AddFood from "../Pages/AddFood/AddFood";
 import ManageFoods from "../Pages/ManageFoods/ManageFoods";
 import FoodDetails from "../Pages/FoodDetails/FoodDetails";
 import Login from "../Pages/Login/Login";
+import Registration from "../Pages/Registration/Ragistration";
+import PrivateRoute from "./PrivateRoute";
   const routes = createBrowserRouter([
     {
       path: "/",
@@ -35,11 +37,11 @@ import Login from "../Pages/Login/Login";
         },
         {
           path:'/addFood',
-          element:<AddFood></AddFood>
+          element:<PrivateRoute><AddFood></AddFood></PrivateRoute>
         },
         {
           path:'/manageFoods',
-          element:<ManageFoods></ManageFoods>
+          element:<PrivateRoute><ManageFoods></ManageFoods></PrivateRoute>
         },
         {
           path:'/foodDetail/:id',
@@ -49,7 +51,11 @@ import Login from "../Pages/Login/Login";
         {
           path:'/login',
           element:<Login></Login>
-        }
+        },
+        {
+          path:'/register',
+          element:<Registration></Registration>
+      }
       ]
     },
   ]);
