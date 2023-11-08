@@ -41,7 +41,8 @@ import axios from "axios";
           setUser(currentUser);
           setLoading(false);
           if(currentUser){
-            axios.post()
+            const loggedUser = {email: currentUser.email};
+            axios.post(loggedUser, {withCredentials: true})
             .then(res => {
               console.log(res.data)
             })
