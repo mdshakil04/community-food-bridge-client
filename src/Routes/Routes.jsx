@@ -37,7 +37,7 @@ import PrivateRoute from "./PrivateRoute";
         },
         {
           path:'/addFood',
-          element:<AddFood></AddFood>,
+          element:<PrivateRoute><AddFood></AddFood></PrivateRoute>,
         },
         {
           path:'/manageFoods',

@@ -23,7 +23,7 @@ const ManageFoodsCart = ({singleFood}) => {
               <td>{notes}</td>
               <td>No of Person can eat: {quantity}</td>
               <button className=" btn btn-outline btn-warning">Delete</button>
-              <button className=" btn btn-outline btn-info">Update</button>
+              <button className=" btn btn-outline btn-info">Edit</button>
             </tr>
           </tbody>
         </table>

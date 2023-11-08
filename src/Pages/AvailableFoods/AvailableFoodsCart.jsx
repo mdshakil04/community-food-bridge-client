@@ -2,7 +2,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { motion } from "framer-motion"
 const AvailableFoodsCart = ({allFood}) => {
     const {
         _id,
@@ -16,7 +16,7 @@ const AvailableFoodsCart = ({allFood}) => {
         additional_notes,
       } = allFood;
     return (
-        <div className="card bg-base-100 shadow-xl border-4 border-green-300">
+        <motion.div animate={{ x: 100 }} className="card bg-base-100 shadow-xl border-4 border-green-300">
       <figure>
         <img src={food_image} alt="Food" />
       </figure>
@@ -41,7 +41,7 @@ const AvailableFoodsCart = ({allFood}) => {
           <button className="btn btn-outline btn-success">View Details</button>
         </Link>
       </div>
-    </div>
+    </motion.div>
     );
 };
 
