@@ -11,7 +11,7 @@ import {
   } from "firebase/auth";
   import React, { createContext, useEffect, useState } from "react";
   import app from "./firebase.config";
-import axios from "axios";
+// import axios from "axios";
   
     export const AuthContext = createContext(null);
       const auth = getAuth(app);
@@ -40,13 +40,7 @@ import axios from "axios";
           console.log('user in the state change', currentUser);
           setUser(currentUser);
           setLoading(false);
-          if(currentUser){
-            const loggedUser = {email: currentUser.email};
-            axios.post('http://localhost:5000/jwt',loggedUser, {withCredentials: true})
-            .then(res => {
-              console.log(res.data)
-            })
-          }
+         
       });
       return () =>{
         unSubscribe();

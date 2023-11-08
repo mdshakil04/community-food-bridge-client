@@ -15,13 +15,6 @@ const FoodDetails = () => {
     expired_date,
     additional_notes,
   } = food;
-//   const handleRequest = () =>{
-//     <div className="toast toast-center toast-middle">
-//     <div className="alert alert-success">
-//       <span>Message sent successfully.</span>
-//     </div>
-//   </div>
-//   }
   return (
     <div className=" mt-24">
       {/*  Donor Info*/}
