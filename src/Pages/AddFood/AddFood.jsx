@@ -1,8 +1,6 @@
-
 /* eslint-disable no-unused-vars */
+import Swal from 'sweetalert2'
 import React from 'react';
-// import { useLoaderData } from 'react-router-dom';
-// import AddFood from './AddFood';
 
 const AddFood = () => {
     const handleAddFood = event => {
@@ -16,10 +14,19 @@ const AddFood = () => {
         const notes = form.notes.value;
         const donorName = form.donorName.value;
         const donarImage = form.donarImage.value;
-        // const image = form.image.value;
-        const newFood = {name,image, quantity, expireDate, status,notes, donorName,donarImage}
-        console.log(newFood);}
-
+        const newFood = {
+                        name,
+                        image,
+                        quantity, 
+                        expireDate, 
+                        status,
+                        notes, 
+                        donorName,
+                        donarImage
+                      };
+        console.log(newFood);
+        // send data to the server
+        
         fetch('http://localhost:5000/food', {
           method:'POST',
           headers: {
@@ -30,12 +37,19 @@ const AddFood = () => {
         .then(res => res.json())
         .then(data =>{
           console.log(data)
+          if(data.insertedId){
+            Swal.fire(
+              'Food Added to Database!',
+              'Add another Food?',
+              'success'
+            )
+          }
         })
+      }
     return (
         <div >
         <div className=" container bg-[#F3FCF8] mx-auto p-8 mt-12 rounded-xl">
               <h2 className="text-4xl text-center font-mono">Add a Food</h2>
-             
           <form onSubmit={handleAddFood}>
             <div className=" grid md:grid-cols-2 gap-4">
               <div className="form-control">

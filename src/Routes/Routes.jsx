@@ -42,7 +42,7 @@ import PrivateRoute from "./PrivateRoute";
         {
           path:'/manageFoods',
           element:<PrivateRoute><ManageFoods></ManageFoods></PrivateRoute>,
-          loader: ({params}) => fetch(`http://localhost:5000/foods/${params.id}`)
+          loader: ({params}) => fetch('http://localhost:5000/food')
         },
         {
           path:'/foodDetail/:id',
