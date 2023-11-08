@@ -42,7 +42,7 @@ import axios from "axios";
           setLoading(false);
           if(currentUser){
             const loggedUser = {email: currentUser.email};
-            axios.post(loggedUser, {withCredentials: true})
+            axios.post('http://localhost:5000/jwt',loggedUser, {withCredentials: true})
             .then(res => {
               console.log(res.data)
             })
