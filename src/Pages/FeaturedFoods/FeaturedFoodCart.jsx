@@ -37,9 +37,10 @@ const FeaturedFoodCart = ({ featuredFood }) => {
         </div>
         <p className=" font-bold">Pickup Location: { pickup_location}</p>
         
-          <button className="btn btn-outline btn-success">View Details</button>
+          <Link to={'/availableFoods'}>
+            <button className="btn btn-outline btn-success">View Details</button>
+          </Link>
         
-       
       </div>
     </div>
   );
