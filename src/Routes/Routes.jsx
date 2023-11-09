@@ -42,12 +42,12 @@ import PrivateRoute from "./PrivateRoute";
         {
           path:'/manageFoods',
           element:<PrivateRoute><ManageFoods></ManageFoods></PrivateRoute>,
-          loader: () => fetch('https://community-food-bridge-server-ks8ciir7q.vercel.app/food')
+          loader: ({params}) => fetch('https://community-food-bridge-server-by1dafbpu.vercel.app/food')
         },
         {
           path:'/foodDetail/:id',
           element:<FoodDetails></FoodDetails>,
-          loader: ({params}) => fetch(`https://community-food-bridge-server-ks8ciir7q.vercel.app/foods/${params.id}`)
+          loader: ({params}) => fetch(`https://community-food-bridge-server-by1dafbpu.vercel.app/foods/${params.id}`)
         },
         {
           path:'/login',

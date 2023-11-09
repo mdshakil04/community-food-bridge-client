@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import AvailableFoodsCart from "./AvailableFoodsCart";
-import { data } from "autoprefixer";
+// import { data } from "autoprefixer";
 
 const AvailableFoods = () => {
   const [allFoods, setAllFoods] = useState([]);
   useEffect(() => {
-    fetch("https://community-food-bridge-server-ks8ciir7q.vercel.app/foods")
+    fetch("https://community-food-bridge-server-by1dafbpu.vercel.app/foods")
       .then((res) => res.json())
       .then((data) => setAllFoods(data));
       

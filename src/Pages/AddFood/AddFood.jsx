@@ -27,7 +27,7 @@ const AddFood = () => {
         console.log(newFood);
         // send data to the server
         
-        fetch('https://community-food-bridge-server-ks8ciir7q.vercel.app/food', {
+        fetch('https://community-food-bridge-server-by1dafbpu.vercel.app/food', {
           mode: 'no-cors',
           method:'POST',
           headers: {

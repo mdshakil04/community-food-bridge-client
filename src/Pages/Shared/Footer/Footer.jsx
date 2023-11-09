@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer footer-center p-4 bg-[#F3FCF8] ">
       <aside>
-        <img className=" w-1/5" src={logo} alt="" />
+        <img className=" w-1/7" src="https://i.ibb.co/YcVQs2C/Screenshot-2023-11-09-133911-removebg-preview.png" alt="" />
         <div className=" lg:flex gap-60">
           <nav>
             <header className="footer-title text-xl">Contact</header>
