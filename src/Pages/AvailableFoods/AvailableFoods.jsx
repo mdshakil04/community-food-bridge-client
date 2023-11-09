@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import AvailableFoodsCart from "./AvailableFoodsCart";
+import {Helmet} from "react-helmet";
 // import { data } from "autoprefixer";
 
 const AvailableFoods = () => {
@@ -13,6 +14,9 @@ const AvailableFoods = () => {
   console.log(allFoods.length)
   return (
     <div className=" mt-16 ">
+        <Helmet>
+          <title>Available Foods</title>
+        </Helmet>
       <h2 className="text-4xl text-center">
         We have <span className=" text-green-400 font-bold">{allFoods.length}</span> items of Foods in our Food Bank
       </h2>

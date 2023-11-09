@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import Swal from 'sweetalert2'
 import React from 'react';
-
+import {Helmet} from "react-helmet";
 const AddFood = () => {
     const handleAddFood = event => {
         event.preventDefault();
@@ -49,6 +49,9 @@ const AddFood = () => {
       }
     return (
         <div >
+          <Helmet>
+                   <title>Available Foods</title>
+           </Helmet>
         <div className=" container bg-[#F3FCF8] mx-auto p-8 mt-12 rounded-xl">
               <h2 className="text-4xl text-center font-mono">Add a Food</h2>
           <form onSubmit={handleAddFood}>
